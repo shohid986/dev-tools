@@ -28,7 +28,7 @@ for (let btn of allBtnElements) {
         const clickedSecond = date.getSeconds();
         // create new element and update section
         const childElement = document.createElement("p");
-        childElement.setAttribute("class", "bg-[#F4F7FF] text-xs p-4 mt-5");
+        childElement.setAttribute("class", "bg-[#F4F7FF] text-sm font-medium p-4 mt-5");
         childElement.textContent =
         `You have Complete The Task Add Dark Mode at ${clickedHours}:${clickedMinutes}:${clickedSecond} ${clickedMidday}`;
         parentElement.appendChild(childElement);
