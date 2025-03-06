@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"  class="bg-[#F4F7FF]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev tools</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F4F7FF]">
+    <div class="w-14/15 mx-auto my-5">
+      <header>
+        <nav>
+          <div class="navbar bg-base-100 shadow-sm pb-5">
+            <div class="flex-1">
+              <div class="flex items-center">
+                <img src="./assets/logo.png" alt="" />
+                <a class="btn btn-ghost text-xl">Dev Board</a>
+              </div>
+            </div>
+            <div class="flex gap-6 items-center">
+              <div
+                class="flex w-20 h-13 justify-center rounded-3xl items-center bg-[#F4F7FF]"
+              >
+                <img class="w-6 h-6" src="/assets/checkbox.png" alt="" />
+                <h2 class="font-extrabold text-2xl">23</h2>
+              </div>
+              <div class="dropdown dropdown-end">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle avatar"
+                >
+                  <div class="w-10 rounded-full">
+                    <img 
+                    id="theme-btn"
+                      alt="Tailwind CSS Navbar component"
+                      src="/assets/theme-btn.png"
+                    />
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main">
+        <div class=" my-4 grid grid-cols-4 gap-3">
+          <!-- divider section between task header and activity log -->
+          <section class="bg-[#FFFFFF] col-span-3">
+            <!-- Cards header section -->
+          <section>
+            <div class="grid grid-cols-4 gap-6 p-6">
+              <!-- header task assign part -->
+              <div
+                class="bg-[#F4F7FF] flex justify-center items-center gap-4 rounded-xl p-2"
+              >
+                <img
+                  class="p-4.5 bg-white rounded-3xl w-3/10"
+                  src="/assets/checkbox.png"
+                  alt=""
+                />
+                <p class="text-sm">Task Assigned <br /><span id="taskNumber" class="font-bold text-2xl">06</span></p>
+              </div>
+              <!-- header discover part -->
+              <div
+                class="bg-linear-65 rounded-xl from-purple-500 to-pink-500 col-span-2 flex items-center p-2 pl-5"
+              >
+                <img class=" w-1/8" src="/assets/board.png" alt="" />
+                <p class="text-white">
+                  Discover Something <br />
+                  New Today!
+                </p>
+              </div>
+              <!-- header calender part -->
+              <div class="bg-[#F4F7FF] rounded-xl flex justify-center items-center gap-4 p-2">
+                <img
+                  class="p-4.5 bg-white rounded-3xl w-3/10"
+                  src="/assets/calender.png"
+                  alt=""
+                />
+                <p>
+                  Wed , <br />
+                  <span class="font-bold text-xl">Jul 28 2025</span>
+                  </p>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- task cards section -->
+          <section class="flex justify-center p-6">
+            <!-- cards start -->
+            <div class="grid grid-cols-2 gap-12 justify-between">
+              <!-- card1 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="btn bg-[#3752FD] font-medium text-white card-button">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card2 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="card-button btn bg-[#3752FD] font-medium text-white">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card3 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="card-button btn bg-[#3752FD] font-medium text-white">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card4 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="card-button btn bg-[#3752FD] font-medium text-white">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card5 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="card-button btn bg-[#3752FD] font-medium text-white">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card6 start -->
+              <div class="card bg-[#F4F7FF] text-black text-primary-content w-96">
+                <div class="card-body gap-2">
+                  <span class="badge badge-xs font-semibold px-3 py-4 rounded-xl text-gray-600">ShopEase</span>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <div class="bg-white p-2 rounded-lg">
+                    <p class="text-gray-500 text-sm font-medium">Debug using Chrome DevTools, check for overlapping...</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <div>
+                      <p class="text-gray-500 font-medium">Deadline</p>
+                      <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button class="card-button btn bg-[#3752FD] font-medium text-white">Complete</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+               <!--  -->
+          </section>
+          </section>
+          <!-- activity log section start -->
+          <section class="bg-[#FFFFFF] flex items-center flex-col p-6 gap-2">
+            <div class="flex gap-2">
+              <img src="/assets/activity.png" alt="">
+              <h5>Activity Log</h5>
+            </div>
+            <button id="clearHistory" class="btn btn-sm bg-[#3752FD] text-white">Clear History</button>
+            <div>
+              <hr>
+              <div id="task-added">
+                <!-- <p class="bg-[#F4F7FF] text-xs p-4 mt-5">You have Complete The Task Add Dark Mode at 12:48:15 PM</p> -->
+              </div>
+            </div>
+          </section>
+          <!-- activity log section end -->
+        </div>
+      </main>
+    </div>
+    <script src="/cards.js"></script>
+  </body>
+</html>
